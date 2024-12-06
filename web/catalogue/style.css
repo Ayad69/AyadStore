@@ -1,0 +1,138 @@
+/* Barre bleue gaming */
+.navbar {
+    background: linear-gradient(90deg, #001f3f, #004d9c, #007bff); /* Dégradé bleu électrique */
+    color: #fff;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00aaff, 0 0 20px #004d9c;
+}
+
+.navbar h2 {
+    margin: 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Corps */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 80px 0 0; /* Ajustement pour la barre */
+    background: #0d1117; /* Fond sombre gaming */
+    color: #e6e6e6; /* Texte clair */
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: #00aaff; /* Bleu électrique */
+    padding: 20px 0;
+    text-shadow: 0 0 10px #00aaff, 0 0 20px #004d9c;
+}
+
+p {
+    text-align: center;
+    color: #bbb;
+}
+
+/* Produits */
+.catalogue {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #001f3f, #004d9c); /* Dégradé lumineux */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), inset 0 0 10px #00aaff;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #004d9c;
+    border-radius: 12px;
+    padding: 20px;
+    width: 200px;
+    height: 250px;
+    background: #1e293b; /* Fond produit sombre */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5), inset 0 0 10px #00aaff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), inset 0 0 15px #00eaff;
+}
+
+.product img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00eaff;
+}
+
+.product h3 {
+    font-size: 18px;
+    color: #e6e6e6;
+    text-align: center;
+    text-shadow: 0 0 5px #00aaff;
+}
+
+.product p {
+    font-size: 14px;
+    color: #bbb;
+    text-align: center;
+}
+
+/* Détails des produits */
+.details {
+    display: none;
+    margin-top: 10px;
+    padding: 20px;
+    border: 2px solid #004d9c;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #001f3f, #004d9c);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5), inset 0 0 10px #00aaff;
+    max-width: 600px;
+    margin: 10px auto;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.details img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 0 15px #00eaff;
+}
+
+.details h3 {
+    font-size: 22px;
+    color: #00eaff;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #004d9c;
+}
+
+.details p {
+    font-size: 16px;
+    color: #bbb;
+}
+
+/* Transition pour afficher les détails */
+.show {
+    display: block;
+    opacity: 1;
+}
